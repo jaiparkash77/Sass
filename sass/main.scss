@@ -1,0 +1,46 @@
+@import "var";
+@import "mixin";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+// 1. operators
+//2. variables
+//3. nesting
+//4. Mixin
+//5. parameter
+//6. partials
+
+.main_header{
+    @include flexprop;
+    width: 100vw;
+    height: 100vh;    
+    background-color: $bg-color;
+
+    h1{
+        @include commoncode(0.5rem, uppercase);
+        &:hover{
+            color: #c8d6e5;
+        }
+        &::after{
+            content: " Tutorial 2021";
+        }
+    }    
+    
+    p{
+        @include commoncode(0.3rem, capitalize);
+        &:hover{
+            color: #c8d6e5;
+        }
+    }
+
+    
+}
+

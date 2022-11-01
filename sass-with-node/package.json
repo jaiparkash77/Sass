@@ -1,0 +1,14 @@
+{
+  "name": "sass-with-node",
+  "version": "1.0.0",
+  "description": "I am starting sass with node - compile command - npm run compile:sass or use -w for watch",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Jai Parkash",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
